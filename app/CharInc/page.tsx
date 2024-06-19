@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const Character_Increment = () => {
   const [value, setValue] = useState<string>("");
-  const handleKeyDown = (event) => {
+  const handleKeyDown = (event: { key: string }) => {
     const key = event.key;
 
     // Handle backspace
@@ -14,7 +14,6 @@ const Character_Increment = () => {
         return prevValue.slice(0, -1); //
       });
     } else {
-      console.log(event.key.charCodeAt(0));
       const input = event.key;
       if (
         (input.charCodeAt(0) >= 97 && input.charCodeAt(0) <= 122) ||

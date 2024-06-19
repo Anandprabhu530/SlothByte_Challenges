@@ -31,8 +31,8 @@ const Character_Increment = () => {
   return (
     <div className="flex flex-col w-full h-screen items-center p-6">
       <div className="text-2xl">Change Every Letter to the Next Letter</div>
-      <div className="flex gap-16 h-full items-center justify-center">
-        <div className="basis-1/2 flex justify-end">
+      <div className="flex lg:flex-row flex-col gap-16 h-full items-center justify-center">
+        <div className="basis-1/2 flex lg:justify-end items-end">
           <div className="flex flex-col">
             <div className="text-lg pb-6">Please enter input here</div>
             <input

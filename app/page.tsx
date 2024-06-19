@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <div className="dark:bg-slate-800 dark:text-white">
       <div className="font-poppins pt-16 lg:text-xl text-normal lg:font-semibold flex-col flex justify-center items-center">
-        <div className="pb-6">
+        <div className="p-6">
           This project contains my submission to Sloth-Bytes Weekly Challenges
         </div>
         <div className="font-semibold text-xl">Let's Connect</div>

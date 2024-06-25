@@ -6,8 +6,6 @@ const Character_Increment = () => {
   const [value, setValue] = useState<string>("");
   const handleKeyDown = (event: { key: string }) => {
     const key = event.key;
-
-    // Handle backspace
     if (key === "Backspace") {
       setValue((prevValue) => {
         if (prevValue.length === 0) return "";

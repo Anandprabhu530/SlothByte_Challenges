@@ -1,9 +1,25 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="dark:bg-slate-800 dark:text-white">
       <div className="font-poppins pt-16 lg:text-xl text-normal lg:font-semibold flex-col flex justify-center items-center">
-        <div className="p-6">
-          This project contains my submission to Sloth-Bytes Weekly Challenges
+        <div className="p-6 flex flex-col justify-center items-center">
+          <div className="pb-10">
+            This project contains my submission to Sloth-Bytes Weekly Challenges
+          </div>
+          <Link
+            href="/CharInc"
+            className="text-blue-400 underline underline-offset-2 pb-4"
+          >
+            Change Every Letter to the Next Letter
+          </Link>
+          <Link
+            href="/Makebox"
+            className="text-blue-400 underline underline-offset-2"
+          >
+            Making a box
+          </Link>
         </div>
         <div className="font-semibold text-xl">Let's Connect</div>
         <div className="lg:flex md:flex grid grid-cols-2 lg:gap-8 gap-6 mt-8">

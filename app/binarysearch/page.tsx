@@ -12,7 +12,7 @@ const Binary_Search = () => {
 
   const handlesort = () => {
     if (array_value.split(" ").length > 2) {
-      const compare = (a: any, b: any) => {
+      const compare = (a, b) => {
         return a - b;
       };
       setsorted_array(array_value.split(" ").sort(compare));

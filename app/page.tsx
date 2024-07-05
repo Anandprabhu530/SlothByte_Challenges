@@ -8,18 +8,26 @@ export default function Home() {
           <div className="pb-10">
             This project contains my submission to Sloth-Bytes Weekly Challenges
           </div>
-          <Link
-            href="/CharInc"
-            className="text-blue-400 underline underline-offset-2 pb-4"
-          >
-            Change Every Letter to the Next Letter
-          </Link>
-          <Link
-            href="/Makebox"
-            className="text-blue-400 underline underline-offset-2"
-          >
-            Making a box
-          </Link>
+          <div className="flex flex-col gap-6">
+            <Link
+              href="/CharInc"
+              className="text-blue-400 underline underline-offset-2"
+            >
+              Change Every Letter to the Next Letter
+            </Link>
+            <Link
+              href="/Makebox"
+              className="text-blue-400 underline underline-offset-2"
+            >
+              Making a box
+            </Link>
+            <Link
+              href="/binarysearch"
+              className="text-blue-400 underline underline-offset-2"
+            >
+              First occurrence of the target using Binary Search
+            </Link>
+          </div>
         </div>
         <div className="font-semibold text-xl">Let's Connect</div>
         <div className="lg:flex md:flex grid grid-cols-2 lg:gap-8 gap-6 mt-8">

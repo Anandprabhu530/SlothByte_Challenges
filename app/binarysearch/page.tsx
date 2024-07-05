@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import * as Dialog from "@radix-ui/react-dialog";
 
 const Binary_Search = () => {
   const [array_value, setArray_value] = useState("");
@@ -14,7 +13,7 @@ const Binary_Search = () => {
 
   const handlesort = () => {
     if (array_value.trim().split(" ").length > 2) {
-      const compare = (a, b) => {
+      const compare = (a: any, b: any) => {
         return a - b;
       };
       setsorted_array(array_value.split(" ").sort(compare));
